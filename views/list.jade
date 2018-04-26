@@ -1,0 +1,17 @@
+ul
+	- for (var x = 0; x < 3; x ++) {
+	li.blog_item
+		div.author
+			a(href="/")
+				img.blog_item_head(src="/images/head.jpg")
+			div.author_info
+				a.author_name(href="/") ZHE
+				span.time #{blogs[x].time}
+		div.blog_text
+			div.left_text
+				a.blog_item_title(href="#{blogs[x].text_src}") #{blogs[x].title}
+				p.simple_text
+					| #{blogs[x].simple_introduction}
+			img.blog_item_img(src="#{blogs[x].img_src}")
+
+	- }

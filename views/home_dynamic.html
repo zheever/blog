@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/homeStyle.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="javascripts/jquery.pjax.js"></script>
+	<script src="javascripts/home_dynamic.js"></script>
+</head>
+<body>
+	<div class="main_container">
+		<div class='left_container'>
+			<div class='top_container flex_row'>
+				<div class="headNameContainer flex_row">
+					<img class="head_portraits" src="images/head.jpg" />
+					<div class='name'>ZHE</div>
+				</div>
+				<div class="send_message">发简信</div>
+			</div>
+			<ul class="triggle_menu" data-pjax-container="#list_container">
+				<li>
+					<a href="list" id='blog_article_button'>文章</a>
+				</li>
+				<li>
+					<a href="dynamic" id='blog_dynamic_button'>动态</a>
+				</li>
+				<li>
+					<a href="list" id='blog_comment_button'>评论</a>
+				</li>
+			</ul>
+			<div id='list_container'></div>
+		</div>
+
+		<div class="right_container">
+			<div>
+				<p class='category'>个人介绍</p>
+				<p>一个无趣的人</p>
+			</div>
+			<div>
+				<p class='category'>博客分类</p>
+				<p>微信小程序</p>
+				<p>系统分析与设计</p>
+				<p>点餐系统</p>
+				<p>Leetcode</p>
+				<p>随想</p>
+			</div>
+			<div>
+				<p class='category'>文章存档</p>
+				<p>2018年4月</p>
+				<p>2018年3月</p>
+				<p>2018年2月</p>
+				<p>2018年1月</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

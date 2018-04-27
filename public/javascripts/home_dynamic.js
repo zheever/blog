@@ -3,11 +3,10 @@
 	$(document).ready(function () {
         add_triggle_menu_listener();
         $(document).on('click', 'a', function(event) {
-        	console.log('test');
     		var container = $('#list_container');
    		 	$.pjax.click(event, container);
    		});
-   		$('#blog_text_button').click();
+   		$('#blog_dynamic_button').click();
 });
 
 

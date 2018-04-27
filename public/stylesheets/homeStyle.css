@@ -135,12 +135,14 @@ li {
 .time {
 	font-size: small;
 	color: #969696;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .left_text {
 	margin: 15px 0 0 0;
 	width: 460px;
+	height: 120px;
 	display: inline-block;
 }
 
@@ -181,4 +183,25 @@ li {
 .category {
 	font-size: 14px;
     color: #969696;
+}
+
+span {
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.dynamic_blog_text {
+	background-color: #EEEEEE;
+	margin:10px 0 0 10px;
+	padding: 10px 0 0 10px;
+}
+
+.dynamic_blog_item_img {
+	width: 90px;
+	height: 90px;
+	margin: 20px 0 0 10px;
+}
+
+.dynamic_blog_item {
+	height: 225px;
 }

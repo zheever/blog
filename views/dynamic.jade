@@ -1,0 +1,18 @@
+ul
+	- for (var x = 0; x < 3; x ++) {
+	li.blog_item.dynamic_blog_item
+		div.dynamic
+			div.author
+				a(href="/")
+					img.blog_item_head(src="/images/head.jpg")
+				div.author_info
+					a.author_name(href="/") ZHE
+					span 在#{blogs[x].time}发布了
+			div.blog_text.dynamic_blog_text
+				div.left_text
+					a.blog_item_title(href="#{blogs[x].text_src}") #{blogs[x].title}
+					p.simple_text
+						| #{blogs[x].simple_introduction}
+				img.blog_item_img.dynamic_blog_item_img(src="#{blogs[x].img_src}")
+
+	- }

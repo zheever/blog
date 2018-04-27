@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/homeStyle.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="javascripts/jquery.pjax.js"></script>
-	<script src="javascripts/home.js"></script>
+	<script src="javascripts/home_article.js"></script>
 </head>
 <body>
 	<div class="main_container">
@@ -19,13 +19,13 @@
 			</div>
 			<ul class="triggle_menu" data-pjax-container="#list_container">
 				<li>
-					<a href="list" id='blog_text_button'>文章</a>
+					<a href="list" id='blog_article_button'>文章</a>
 				</li>
 				<li>
-					<a href="list">动态</a>
+					<a href="dynamic" id='blog_dynamic_button'>动态</a>
 				</li>
 				<li>
-					<a href="list">评论</a>
+					<a href="comment" id='blog_comment_button'>评论</a>
 				</li>
 			</ul>
 			<div id='list_container'></div>

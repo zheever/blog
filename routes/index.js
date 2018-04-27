@@ -17,20 +17,37 @@ catch(err)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  	res.render('home');
+  	res.render('home_article.html');
 });
 
 router.get('/home', function(req, res, next) {
-  	res.render('home');
+  	res.render('home_article.html');
 });
 
 router.get('/list', function(req, res, next) {
   	 if (req.headers['x-pjax']) {//如果x-pjax为true使用res.renderPjax()返回页面
         res.render('list', data);
     } else {
-    	res.render('home');
+    	res.render('home_article.html');
     } 
 });
+
+router.get('/dynamic', function(req, res, next) {
+  	 if (req.headers['x-pjax']) {//如果x-pjax为true使用res.renderPjax()返回页面
+        res.render('dynamic', data);
+    } else {
+    	res.render('home_dynamic.html');
+    } 
+});
+
+router.get('/comment', function(req, res, next) {
+     if (req.headers['x-pjax']) {//如果x-pjax为true使用res.renderPjax()返回页面
+        res.render('comment', data);
+    } else {
+      res.render('home_comment.html');
+    } 
+});
+
 
 router.get(/^\/p\/(\w+)$/, function(req, res, next) {
   	var req_url = url.parse(req.originalUrl);
